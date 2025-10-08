@@ -7,8 +7,9 @@ body {
 header {
   background: #fff;
   color: #222;
-  padding: 0.1em 0;
+  padding: 0.01em 0;
   text-align: center;
+  font-size: 12px;
 }
 nav a {
   color: #fff;
@@ -20,10 +21,15 @@ main.two-column {
   min-height: 80vh;
 }
 .left-column {
-  width: 220px;
+  width: 160px;
   background: #f9f9f9;
   border-right: 1px solid #ddd;
   padding: 2em 1em;
+  height: 80vh;
+  overflow-y: auto;
+}
+iframe {
+  height: 80vh !important;
 }
 .left-column ul {
   list-style: none;
@@ -42,11 +48,13 @@ main.two-column {
 }
 .right-column {
   flex: 1;
-  padding: 2em;
+  padding: 1em;
+  height: 80vh;
+  overflow-y: auto;
 }
 .content-section {
   background: #fff;
-  padding: 1em;
+  padding: 0.5em;
   border-radius: 8px;
   box-shadow: 0 2px 8px rgba(0,0,0,0.05);
 }
@@ -54,8 +62,9 @@ footer {
   background: #fff;
   color: #222;
   text-align: center;
-  padding: 0.1em 0;
+  padding: 0.01em 0;
   position: fixed;
   width: 100%;
   bottom: 0;
+  font-size: 12px;
 }
